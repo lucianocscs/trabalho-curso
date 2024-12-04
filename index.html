@@ -1,0 +1,50 @@
+<!-- Declaração de tipo de documento: Informa ao navegador que o documento a seguir é um documento HTML5. Essa declaração é fundamental para que o navegador interprete corretamente o código e renderize a página da forma esperada. -->
+<!DOCTYPE html> 
+<!-- Elemento raiz: Define o início e o fim do documento HTML. O atributo lang="pt-br" especifica que o idioma principal do conteúdo da página é o português do Brasil, auxiliando em tarefas como tradução automática, correção ortográfica e acessibilidade. -->
+<html lang="pt-br">
+
+<!-- Seção de cabeçalho: Contém metadados sobre a página, como o conjunto de caracteres, informações para dispositivos móveis, título da página e links para arquivos CSS. -->
+<head>
+    <!-- Especifica que os caracteres utilizados na página estão codificados em UTF-8, um padrão amplamente utilizado que suporta a maioria dos idiomas. -->
+         <meta charset="UTF-8"> 
+
+         <!-- Configura a área visível da página em dispositivos móveis, garantindo que a página se adapte ao tamanho da tela. -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Define o título que será exibido na aba do navegador. -->
+         <title>Desvendando as Energias Renováveis: Um Projeto Interativo</title> 
+
+         <!-- Conecta a página HTML a um arquivo CSS externo chamado "style.css", que contém as regras de estilo para formatar a aparência da página. -->
+
+         <link rel="stylesheet" href="style.css"> 
+</head>
+<!-- Seção do corpo: Contém o conteúdo visível da página, como texto, imagens, vídeos e outros elementos. -->
+<body>
+    <!-- Seção de cabeçalho: Contém metadados sobre a página, como o conjunto de caracteres, informações para dispositivos móveis, título da página e links para arquivos CSS. -->
+        <header>
+            <!-- Contém o cabeçalho da página, geralmente com o título principal.  -->
+            <h1> Uma imersão no mundo das fontes de energia limpas e sustentáveis.</h1> 
+        </header> 
+        <!-- Contém o conteúdo principal da página. -->
+        <main> 
+            <!-- Seção genérica: Divide o conteúdo principal em seções temáticas. -->
+            <section>
+                 <!-- Elementos de formulário: Permitem a interação do usuário com a      página. -->
+                 <!-- input - Cria um campo de entrada  de texto. -->
+                 <!-- button = Cria um botão. -->
+                <input type="text" placeholder="Digite sua busca" id="campo-pesquisa"> 
+                <button onclick="pesquisar()">pesquisar</button>
+            </section> 
+            
+            <section class="resultados-pesquisa" id="resultados-pesquisa">
+            </section> 
+        </main>
+        <!-- Contém o rodapé da página, geralmente com informações de copyright, contato e links para outras páginas. -->
+        <footer> 
+            <p>2024 - Energias Renovaveis</p>
+            <P>contato <a href="mailton:lucianocscs2022@gmail.com">lucianocscs2022@gmail.com</a></P>
+        </footer> 
+        <script src="dados.js"></script>
+        <script src="app.js"></script> 
+</body>
+
+</html>
